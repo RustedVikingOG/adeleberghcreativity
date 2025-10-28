@@ -4,12 +4,9 @@
       <petal-background />
     </div> -->
 
-    <q-card class="header-card subcard-width blend-border">
+    <q-card class="header-card subcard-width">
       <div class="logo-container">
-        <q-img
-            src="logos/logo.png"
-            fit="contain"
-          />
+        <q-img src="logos/logo.png" fit="contain" />
       </div>
     </q-card>
 
@@ -38,22 +35,22 @@
 
     <q-page-container class="page-width">
 
-      <q-page class="page-spacing blend-border over">
-        <home-page class="home-page"/>
+      <q-page class="page-spacing over">
+        <home-page class="home-page" />
       </q-page>
 
-      <q-page class="page-spacing blend-border">
-        <art-gallery class="art-gallery"/>
+      <q-page class="page-spacing">
+        <art-gallery class="art-gallery" />
       </q-page>
 
-      <q-page class="page-spacing blend-border">
-        <photo-gallery class="photo-gallery"/>
+      <q-page class="page-spacing">
+        <photo-gallery class="photo-gallery" />
       </q-page>
 
     </q-page-container>
 
     <q-dialog v-model="showModal">
-      <contact-modal @submit="showModal = false"/>
+      <contact-modal @submit="showModal = false" />
     </q-dialog>
   </q-layout>
 </template>
@@ -117,13 +114,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:
-    linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
-    linear-gradient(-45deg, #e0e0e0 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #e0e0e0 75%),
-    linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
-  background-size: 50px 50px;
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  background-image: repeating-linear-gradient(to right, rgb(98, 98, 98) 0px, rgb(98, 98, 98) 50px, rgb(90, 89, 89) 50px, rgb(90, 89, 89) 100px);
   background-color: #c0c0c0;
 }
 
@@ -177,6 +168,7 @@ onUnmounted(() => {
     width: 90%;
     height: 100px;
   }
+
   .logo-space {
     height: 70%;
     width: 30px;
@@ -188,6 +180,7 @@ onUnmounted(() => {
   .header-content {
     font-family: 'Italianno', sans-serif !important;
     width: 80%;
+
     h1 {
       line-height: 3.5rem !important;
     }

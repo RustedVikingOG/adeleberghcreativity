@@ -28,18 +28,3 @@ h1 {
   margin-bottom: 32px;
   min-height: 700px !important;
 }
-
-.blend-border {
-  background: linear-gradient(45deg, red, blue, yellow, red);
-  padding: 2px;
-  box-sizing: border-box;
-  position: relative;
-  border-radius: 16px;
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: white;
-    border-radius: 16px;
-  }
-}
