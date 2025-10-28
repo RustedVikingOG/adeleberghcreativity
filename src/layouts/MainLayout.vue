@@ -114,7 +114,11 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: repeating-linear-gradient(to right, rgb(98, 98, 98) 0px, rgb(98, 98, 98) 50px, rgb(90, 89, 89) 50px, rgb(90, 89, 89) 100px);
+  background-image: repeating-linear-gradient(to right,
+      rgb(98, 98, 98) 0px,
+      rgb(98, 98, 98) 50px,
+      rgb(90, 89, 89) 50px,
+      rgb(90, 89, 89) 100px);
   background-color: #c0c0c0;
 }
 
